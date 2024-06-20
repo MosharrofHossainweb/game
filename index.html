@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>game</title>
+    <link rel="icon" href="image/data.png">
+    <link rel="stylesheet" href="css/style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</head>
+
+<body>
+    <!-- ======================manu==================== -->
+    <nav id="manu">
+        <div class="manu_row">
+            <div class="manu_log"><a href="#">Game</a></div>
+            <div class="main_manu">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                </ul>
+            </div>
+            <div class="manu_btn">
+                <a href="#" class="sing_up">Sing Up</a>
+                <a href="#" class="login">Login</a>
+            </div>
+        </div>
+    </nav>
+    <!-- ======================manu==================== -->
+     <!-- ============REGISTRATION===================== -->
+      <div class="container">
+        <div class="form_box">
+            <form action=""name="form_fill" onsubmit="return validation()">
+                <h2>Create an acount</h2>
+                <h3 id="result"></h3>
+                <div class="input_box">
+                    <i class='bx bx-user'></i>
+                    <input type="text" name="username" placeholder="User Name">
+                </div>
+                <div class="input_box">
+                    <i class='bx bxs-envelope'></i>
+                    <input type="text" name="email" placeholder="Enter Your Email">
+                </div>
+                <div class="input_box">
+                    <i class='bx bxs-lock-alt' ></i>
+                    <input type="password" name="password" placeholder="Password">
+                </div>
+                <div class="input_box">
+                    <i class='bx bxs-lock-alt' ></i>
+                    <input type="password" name="cpassword" placeholder="Confirm Password">
+                </div>
+                <div class="button">
+                    <input type="submit" class="btn" onclick="validation()" value="Registration">
+                </div>,
+                <div class="group">
+                    <span><a href="#">Forget Password</a></span>
+                    <span><a href="login.html">Login</a></span>
+                </div>
+            </form>
+        </div>
+        <div class="popup" id="popup">
+            <ion-icon name="checkmark-circle-outline"></ion-icon>
+            <h3>Your registration is successfull</h3>
+            <h2>Wellcome!!</h2>
+            <p> let's fun with this Game</p>
+            <a href="#"><button onclick="closeSlide()" >OK</button></a>
+        </div>
+      </div>
+      <!-- =============REGISTRATION=================== -->
+    <!-- ======================player one==================== -->
+    <!-- <div class="reg_form_one">
+        <form>
+            <h1 class="headline"></h1>
+            <h2 class="reg_head">Create an account</h2>
+            <input type="text" class="player_one_name" placeholder="Type your name">
+            <input type="text" class="player_one_email" placeholder="Enter your email">
+            <input type="password" class="player_one_password" placeholder="Password">
+
+            <button class="player_one_sub_btn">Submit</button>
+        </form>
+    </div> -->
+
+    <!-- <div class="player_one_input">
+        <input type="number" class="plr_one_inpt" min="1" max="10" placeholder="Enter a number">
+        <button class="pl_one_btn">Next</button>
+    </div> -->
+
+    <!-- ======================player one==================== -->
+    <!-- <div class="reg_form_two">
+        <form>
+            <h1 class="headline"></h1>
+            <h2 class="reg_head">Create an account</h2>
+            <input type="text" class="player_two_name" placeholder="Type your name">
+            <input type="text" class="player_two_email" placeholder="Enter your email">
+            <input type="password" class="player_two_password" placeholder="Password">
+
+            <button class="player_two_sub_btn">Submit</button>
+        </form>
+    </div>
+    <div class="player_two_input">
+        <input type="number" class="pl_two_inpt" placeholder="Enter Your Number" min="1" max="10">
+        <button class="pl_two_btn">Next</button>
+    </div> -->
+    <!-- ======================player two ==================== -->
+    <!-- <div class="reg_form_three">
+        <form>
+            <h1 class="headline"></h1>
+            <h2 class="reg_head">Create an account</h2>
+            <input type="text" class="player_three_name" placeholder="Type your name">
+            <input type="text" class="player_three_email" placeholder="Enter your email">
+            <input type="password" class="player_three_password" placeholder="Password">
+
+            <button class="player_three_sub_btn">Submit</button>
+        </form>
+    </div>
+    <div class="player_three_input">
+        <input type="number" class="plr_three_inpt" min="1" max="10" placeholder="Enter your number">
+        <button class="pl_three_btn">Next</button>
+    </div>
+    </div> -->
+    <!-- ======================player three==================== -->
+
+    <!-- script link -->
+    <script src="js/index.js"></script>
+</body>
+
+</html>
