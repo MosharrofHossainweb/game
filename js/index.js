@@ -65,3 +65,6 @@ let popup =document.getElementById('popup');
 function closeSlide(){
     popup.classList.remove('open_slide')
 }
+// =============Dom======================
+let button = document.querySelector('.button')
+let login = document.querySelector('.btn')
