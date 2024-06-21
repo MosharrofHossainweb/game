@@ -48,14 +48,13 @@ function validation(){
         document.getElementById("result").innerHTML="Password must be 6-digit!!";
         return false;
     }
-   else if(document.form_fill.cpassword.value){
+   else if(document.form_fill.cpassword.value==""){
         document.getElementById("result").innerHTML="Confirm your password!!";
         return false;
     }
-    else if(document.form_fill.cpassword.value!==document.form_fill.password.value){
-        document.getElementById("result").innerHTML="Password dosen't match!!";
+    else if(document.form_fill.cpassword.value !== document.form_fill.password.value){
+        document.getElementById("result").innerHTML="Password dosen't match!";
         return false;
-        console.log(cpassword);
     }
     else if(document.form_fill.password.value==document.form_fill.cpassword.value){
         popup.classList.add("open_slide")
