@@ -14,12 +14,11 @@ a {
     display: inline-block;
     text-decoration: none;
 }
+
 ul {
     list-style: none;
 }
 
-/*==========common css========== */
-/* ===========player one ==============*/
 body {
     background: url(../image/fight.jpg);
     background-position: center;
@@ -34,121 +33,9 @@ body {
     align-items: center;
     min-height: 100vh;
 }
-.form_box{
-    position: relative;
-    width: 400px;
-    height: 550px;
-    border: 2px solid rgba(255,225,255,2550.5);
-    border-radius: 10px;
-    backdrop-filter:blur(3px);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.form_box h2{
-    text-align: center;
-    font-size: 32px;
-    color: #fff;
-    font-family: "Roboto", sans-serif;
-}
-.form_box .input_box{
-    position: relative;
-    margin: 30px 0;
-    width: 320px;
-    border-bottom: 2px solid #fff;
-}
-.form_box .input_box input{
-    width: 100%;
-    height: 45px;
-    background: transparent;
-    border: none;
-    outline: none;
-    padding: 0 20px 0 5px;
-    color: #fff;
-    font-size: 18px;
-    font-family: "Roboto", sans-seri
-}
-input::placeholder{
-    color: #fff;
-    font-size: 16px;
-    font-family: "Roboto", sans-serif;
-}
-.btn{
-    color: #fff;
-    background: blueviolet;
-    border: none;
-    width:100%;
-    height: 50px;
-    border-radius: 5px;
-    outline: none;
-    font-size: 17px;
-    box-shadow: 5px 0 15px hsl(191, 17%, 88%);
-}
-.btn:active{
-    transform: scale(1.1);
-}
-.group{
-    display: flex;
-    justify-content: space-between;
-}
-.group span a{
-    color: #fff;
-    position: relative;
-    top: 10px;
-    font-weight: 500;
-}
-.group a:focus{
-    text-decoration: underline;
-}
-i{
-    position: absolute;
-    color: #fff;
-    top: 13px;
-    right: 0;
-    font-size:18px;
-}
-.popup{
-    width: 400px;
-    background: yellowgreen;
-    border-radius: 5px;
-    position: absolute;
-    top: 0;
-    left: 50%;
-    transform:translate(-50%,-50%) scale(1);
-    transition: transform .4s ,top .4s;
-    visibility: hidden;
-    text-align: center;
-    padding: 0 30px 30px;
-    height: 330px;
-}
-.popup ion-icon{
-    color: black;
-    font-size: 50px;
-}
-.popup button{
-    margin-top: 50px;
-    width: 100px;
-    height: 30px;
-    background: rgb(36, 11, 94);
-    border: none;
-    color: #fff;
-    border-radius:5px;
-    outline: none;
-    font-size: 18px;
-    transition: all linear .3s;
-}
-.popup button:active{
-    transform: scale(1.3);
-}
-.popup button:hover{
-    background: rgb(89, 41, 89);
-}
-.open_slide{
-    top: 50%;
-    transform: translate(-50%,-50%) scale(1);
-    visibility: visible;
-}
-/* ==================manu================ */
+
+/*==========common css========== */
+/* ===========manu===== =======*/
 .manu_log a {
     font-family: "Playwrite SK", cursive;
     font-size: 38px;
@@ -222,7 +109,7 @@ i{
     color: #fff;
     background: blueviolet;
     border: none;
-    width:100%;
+    width:320px;
     height: 50px;
     border-radius: 5px;
     outline: none;
@@ -239,14 +126,39 @@ i{
     color: #fff;
 }
 
-form {
-    padding-right: 500px;
+/* ===========manu====== */
+#result{
+    position: relative;
+    top: 45px;
+    color: chartreuse;
+    font-size: 24px;
+    align-items: start;
+}
+.form_box{
+    position: relative;
+    width: 450px;
+    height:800px;
+    border: 2px solid rgba(255,225,255,2550.5);
+    border-radius: 10px;
+    backdrop-filter:blur(3px);
     display: flex;
+    justify-content: center;
+    align-items: center;
+}
+form {
+    display: flex;
+    justify-content: center;
     align-items: end;
     flex-direction: column;
     gap: 50px;
+    width:100%;
+    height: 100%;
+    padding: 60px;
 }
-
+.log_head{
+    padding-right: 85px;
+    font-size: 45px;
+}
 form input {
     font-size: 24px;
     font-family: "Roboto", sans-serif;
@@ -256,5 +168,129 @@ form input {
     -moz-box-shadow: -1px 2px 19px 3px rgba(140, 186, 46, 0.75);
 
 }
-
+.form_box h2{
+    position: relative;
+    padding-right: 70px;
+    top: 70px;
+    text-align: center;
+    color: #fff;
+    font-family: "Roboto", sans-serif;
+}
+.form_box .input_box{
+    position: relative;
+    margin: 30px 0;
+    width: 320px;
+    border-bottom: 2px solid #fff;
+}
+.form_box .input_box input{
+    position: absolute;
+    width: 100%;
+    height: 45px;
+    background: transparent;
+    border: none;
+    outline: none;
+    padding: 0 20px 0 5px;
+    color: #fff;
+    font-size: 18px;
+    font-family: "Roboto", sans-serif;
+}
+input::placeholder{
+    color: #fff;
+    font-size: 16px;
+    font-family: "Roboto", sans-serif;
+}
+.btn{
+    position: relative;
+    color: #fff;
+    background: rgb(117, 29, 199);
+    border: none;
+    width:320px;
+    height: 50px;
+    right: 3px;
+    border-radius: 5px;
+    outline: none;
+    font-size: 17px;
+    cursor: pointer;
+    box-shadow: 5px 0 15px hsl(191, 17%, 88%);
+}
+.btn:active{
+    transform: scale(1.1);
+}
+.group{
+    width: 100%;
+    padding-bottom: 62px;
+    display: flex;
+    justify-content: space-between;
+}
+.group span a{
+    color: #fff;
+    position: relative;
+    top: 10px;
+    font-weight: 500;
+}
+.group a:focus{
+    text-decoration: underline;
+}
+i{
+    position: absolute;
+    color: #fff;
+    top: 13px;
+    right: 0;
+    font-size:18px;
+}
+.popup{
+    width:1200px;
+    height:1200px;
+    padding: 300px 50px;
+    background: yellowgreen;
+    border-radius: 5px;
+    position: absolute;
+    font-size: 58px;
+    font-family: "Roboto", sans-serif;
+    top: 0;
+    left: 50%;
+    transform:translate(-50%,-50%) scale(1);
+    transition: transform .4s ,top .4s;
+    visibility: hidden;
+    text-align: center;
+}
+.popup ion-icon{
+    color: black;
+    font-size: 50px;
+}
+.popup button{
+    margin-top: 50px;
+    width: 100px;
+    height: 30px;
+    background: rgb(36, 11, 94);
+    border: none;
+    color: #fff;
+    border-radius:5px;
+    outline: none;
+    font-size: 18px;
+    transition: all linear .3s;
+}
+.popup button:active{
+    transform: scale(1.3);
+}
+.popup button:hover{
+    background: rgb(89, 41, 89);
+}
+.open_slide{
+    top: 50%;
+    transform: translate(-50%,-50%) scale(1);
+    visibility: visible;
+}
 /* ===============player one=========== */
+.player_one{
+    padding: 200px 50px;
+    width: 500px;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    border: solid 5px yellowgreen;
+}
+.player_one input{
+    
+}
