@@ -282,6 +282,14 @@ i{
     visibility: visible;
 }
 /* ===============player one=========== */
+.error{
+    color: #fff;
+    font-size: 24px;
+    font-weight: 600;
+}
+.chance{
+    color: #fff;
+}
 .player_one{
     padding: 200px 50px;
     width: 500px;
@@ -292,5 +300,108 @@ i{
     border: solid 5px yellowgreen;
 }
 .player_one input{
-    
+    height: 70px;
+    text-align: center;
+    font-size: 24px;
+    font-family: "Roboto", sans-serif;
+    color: yellowgreen;
+    border: none;
+    border-radius: 5px;
+    background: transparent;
+    box-shadow: 5px 0 15px hsl(191, 17%, 88%);
+}
+.player_one_btn{
+    margin: 0 auto;
+    width: 100px;
+    height: 70px;
+    font-size: 24px;
+    font-weight: 600;
+    border-radius: 3px;
+    border: none;
+    box-shadow: 5px 0 15px hsl(191, 17%, 88%);
+    transition: all linear .3s;
+}
+.player_one_btn:hover{
+    background: violet;
+}
+.player_one_btn:active{
+    transform: scale(1.1);
+}
+/* =============.player_two========== */
+.player_two{
+    padding: 200px 50px;
+    width: 500px;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    border: solid 5px yellowgreen;
+    display: none;
+}
+.player_two input{
+    height: 70px;
+    text-align: center;
+    font-size: 24px;
+    font-family: "Roboto", sans-serif;
+    color: yellowgreen;
+    border: none;
+    border-radius: 5px;
+    background: transparent;
+    box-shadow: 5px 0 15px hsl(191, 17%, 88%);
+}
+.player_two_btn{
+    margin: 0 auto;
+    width: 100px;
+    height: 70px;
+    font-size: 24px;
+    font-weight: 600;
+    border-radius: 3px;
+    border: none;
+    box-shadow: 5px 0 15px hsl(191, 17%, 88%);
+    transition: all linear .3s;
+}
+.player_two_btn:hover{
+    background: violet;
+}
+.player_two_btn:active{
+    transform: scale(1.1);
+}
+/* =========player three============ */
+.player_three{
+    padding: 200px 50px;
+    width: 500px;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    border: solid 5px yellowgreen;
+    display: none;
+}
+.player_three input{
+    height: 70px;
+    text-align: center;
+    font-size: 24px;
+    font-family: "Roboto", sans-serif;
+    color: yellowgreen;
+    border: none;
+    border-radius: 5px;
+    background: transparent;
+    box-shadow: 5px 0 15px hsl(191, 17%, 88%);
+}
+.player_three_btn{
+    margin: 0 auto;
+    width: 100px;
+    height: 70px;
+    font-size: 24px;
+    font-weight: 600;
+    border-radius: 3px;
+    border: none;
+    box-shadow: 5px 0 15px hsl(191, 17%, 88%);
+    transition: all linear .3s;
+}
+.player_three_btn:hover{
+    background: violet;
+}
+.player_three_btn:active{
+    transform: scale(1.1);
 }
