@@ -39,8 +39,8 @@ body {
     min-height: 100vh;
 }
 
-/*==========common css========== */
-/* ===========manu===== =======*/
+/*==========common css end=========== */
+/* ===========man start===========*/
 .manu_log a {
     font-family: "Playwrite SK", cursive;
     font-size: 38px;
@@ -131,7 +131,7 @@ body {
     color: #fff;
 }
 
-/* ===========manu====== */
+/* ===========manu end====== */
 #result{
     position: relative;
     top: 45px;
@@ -265,14 +265,14 @@ i{
 }
 .popup button{
     margin-top: 50px;
-    width: 100px;
-    height: 30px;
+    width: 187px;
+    height: 87px;
     background: rgb(36, 11, 94);
     border: none;
     color: #fff;
     border-radius:5px;
     outline: none;
-    font-size: 18px;
+    font-size: 24px;
     transition: all linear .3s;
 }
 .popup button:active{
@@ -292,11 +292,44 @@ i{
     font-size: 24px;
     font-weight: 600;
 }
+.error2{
+    color: #fff;
+    font-size: 24px;
+    font-weight: 600;
+}
+.error3{
+    color: #fff;
+    font-size: 24px;
+    font-weight: 600;
+}
+.result{
+    color: #fff;
+    font-size: 34px;
+    font-weight: 600;
+}
+.result2{
+    color: #fff;
+    font-size: 34px;
+    font-weight: 600;
+}
+.result3{
+    color: #fff;
+    font-size: 34px;
+    font-weight: 600;
+}
+.player_name{
+    color: #fff;
+    font-size: 24px;
+    font-weight: 600;
+}
 .chance{
     color: #fff;
 }
+.chance3{
+    color: #fff;
+}
 .player_one{
-    padding: 200px 50px;
+    padding: 100px 50px;
     width: 500px;
     height: 500px;
     display: flex;
@@ -333,18 +366,26 @@ i{
     transform: scale(1.1);
 }
 /* =============.player_two========== */
+.Player_two_name{
+    color: #fff;
+    font-size: 35px;
+    font-weight: 600;
+    text-align: center;
+}
 .player_two{
-    padding: 200px 50px;
+    padding: 150px 50px;
     width: 500px;
     height: 500px;
     display: flex;
     flex-direction: column;
+    align-items: center;
     gap: 50px;
     border: solid 5px yellowgreen;
     display: none;
 }
 .player_two input{
     height: 70px;
+    width: 300px;
     text-align: center;
     font-size: 24px;
     font-family: "Roboto", sans-serif;
@@ -384,6 +425,7 @@ i{
 }
 .player_three input{
     height: 70px;
+    /* width: 300px; */
     text-align: center;
     font-size: 24px;
     font-family: "Roboto", sans-serif;
@@ -410,3 +452,25 @@ i{
 .player_three_btn:active{
     transform: scale(1.1);
 }
+/* ==========about page css======== */
+.about_p{
+    width: 90%;
+    color: #fff;
+    font-size: 34px;
+    font-weight: 600;
+    font-family: "Roboto", sans-serif;
+}
+.about_h{
+    width: 90%;
+    color: #fff;
+    font-size: 34px;
+    font-weight: 600;
+    font-family: "Roboto", sans-serif; 
+}
+.about_col{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+/* ============about page end=======  */

@@ -1,38 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="css/style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-      <!-- ============game part===================== -->
+  <!-- ============game part===================== -->
   <div class="container">
     <!-- ==========playerone======= -->
     <div class="player_one">
       <p class="error"></p>
-   <input type="text" class="player_one_input" placeholder="Enter your Name">
-   <input type="number" class="plyaer_one_inp_numer" placeholder="Enter your number">
-   <button class="player_one_btn">Start</button>
-  </div>
-  <!-- ============player two======= -->
-  <div class="player_two">
+      <h2 class="result"></h2>
+      <h2 class="player_name"></h2>
+      <input type="text" class="player_one_input" placeholder="Enter your Name">
+      <input type="number" class="plyaer_one_inp_numer" placeholder="Enter your number">
+      <button class="player_one_btn">Start</button>
+    </div>
+    <!-- ============player two======= -->
+    <div class="player_two">
+      <h2 class="result2"></h2>
+      <h4 class="Player_two_name">Player tow</h4>
+      <p class="error2"></p>
       <div class="chance">You have <span class="chance_number">"0-5"</span>chances</div>
-   <input type="text" class="player_two_input" placeholder="Enter your Name">
-   <input type="number" class="plyaer_two_inp_numer" placeholder="Enter your number">
-   <button class="player_three_btn">Start</button>
+      <input type="text" class="player_two_input" placeholder="Enter your Name">
+      <input type="number" class="plyaer_two_inp_numer" placeholder="Enter your number">
+      <button class="player_two_btn">Start</button>
+    </div>
+    <!-- =============playerone============ -->
+    <div class="player_three">
+      <h2 class="result3"></h2>
+      <p class="error3"></p>
+      <div class="chance3">You have <span class="chance_number3">"0-5"</span>chances</div>
+      <input type="text" class="player_three_input" placeholder="Enter your Name">
+      <input type="number" class="plyaer_three_inp_numer" placeholder="Enter your number">
+      <button class="player_three_btn">Start</button>
+    </div>
   </div>
-  <!-- =============playerone============ -->
-  <div class="player_three">
-      <div class="chance">You have <span class="chance_number">"0-5"</span>chances</div>
-   <input type="text" class="player_three_input" placeholder="Enter your Name">
-   <input type="number" class="plyaer_three_inp_numer" placeholder="Enter your number">
-   <button class="player_three_btn">Start</button>
-  </div>
-</div>
   <!-- ============game part===================== -->
-    <!-- script link -->
-    <script src="js/index.js"></script>
+  <!-- script link -->
+  <script src="js/index.js"></script>
 </body>
+
 </html>
