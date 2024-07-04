@@ -39,6 +39,7 @@ function closeSlide(){
 // =============Dom======================
 
 // ===============varia  ble part===================
+let winning_result         = document.querySelector('.winning_result')
 let error                  = document.querySelector('.error')
 let error2                 = document.querySelector('.error2')
 let error3                 = document.querySelector('.error3')
@@ -108,8 +109,8 @@ player_two_btn.addEventListener('click',()=>{
             if(plyaer_one_inp_numer.value==plyaer_two_inp_numer.value){
                 result2.style='display:block;'
                 result2.innerHTML = 'Player two is win'
-                player_two.style='display:none;'
-                player_three.style='display:block;'
+                player_two.style='display:block;'
+                player_three.style='display:none;'
             }
             else{
                 i++
@@ -136,14 +137,16 @@ player_three_btn.addEventListener('click',()=>{
             {error3.innerHTML="Please enter a number"}
         else{
             if(plyaer_three_inp_numer.value>10){
-                error2.innerHTML='Enter anumber less than 10'
+                error3.innerHTML='Enter anumber less than 10'
         }else{
             error3.innerHTML=''
             if(plyaer_one_inp_numer.value==plyaer_three_inp_numer.value){
                 result3.style='display:block;'
-                result3.innerHTML = 'Player two is win'
+                result3.innerHTML = 'Player three is win'
                 player_two.style='display:none;'
-                player_three.style='display:block;'
+                player_three.style='display:none;'
+                winning_result.style='display:block'
+                winning_result.innerHTML='Player one win'
             }
             else{
                 m++
@@ -153,10 +156,12 @@ player_three_btn.addEventListener('click',()=>{
                     result3.innerHTML='Player one is win'
                     player_three.style='display:none;'
                     player_name.style='display:none;'
-                    player_three.style='display:block;'
-                }else{
-                    chance_number3.style='display:none'
+                    player_three.style='display:none;'
+                    chance3.style='display:none;'
+                    winning_result.style='display:block'
+                    winning_result.innerHTML='Player one win'
 
+                
                 }
             }
         }

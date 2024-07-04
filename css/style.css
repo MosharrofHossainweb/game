@@ -1,6 +1,7 @@
 /*===============font=========== */
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Playwrite+SK:wght@100..400&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sail&display=swap');
 /* =============font============ */
 /* ===========common css========== */
 * {
@@ -286,7 +287,22 @@ i{
     transform: translate(-50%,-50%) scale(1);
     visibility: visible;
 }
-/* ===============player one=========== */
+/* ==============other part of game css========== */
+.winning_result{
+    width: 100%;
+    height:1440px;
+    text-align: center;
+    padding: 410px;
+    background: url(../image/cup2pc.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    font-size: 250px;
+    font-family: "Sail", system-ui;
+    font-weight: 700;
+    color: #5c5b39;
+    display: none;
+}
 .error{
     color: #fff;
     font-size: 24px;
@@ -318,18 +334,24 @@ i{
     font-weight: 600;
 }
 .player_name{
-    color: #fff;
-    font-size: 24px;
+    color: #d1cb1c;
+    font-size: 44px;
     font-weight: 600;
 }
 .chance{
-    color: #fff;
+    color: #97ca0b;
+    margin-bottom: 10px;
+    margin-top: 10px;
 }
 .chance3{
-    color: #fff;
+    color: #e5db16;
+    margin-bottom: 10px;
+    margin-top: 10px;
 }
+/* ===========other part of game end======= */
+/* ===============player one=============== */
 .player_one{
-    padding: 100px 50px;
+    padding: 7px 70px;
     width: 500px;
     height: 500px;
     display: flex;
@@ -367,13 +389,14 @@ i{
 }
 /* =============.player_two========== */
 .Player_two_name{
-    color: #fff;
-    font-size: 35px;
+    color: hwb(55 3% 6%);
+    font-size: 45px;
     font-weight: 600;
     text-align: center;
 }
+
 .player_two{
-    padding: 150px 50px;
+    padding: 35px 93px;
     width: 500px;
     height: 500px;
     display: flex;
@@ -386,6 +409,8 @@ i{
 .player_two input{
     height: 70px;
     width: 300px;
+    margin-bottom: 23px;
+    margin-top: 22px;
     text-align: center;
     font-size: 24px;
     font-family: "Roboto", sans-serif;
@@ -397,6 +422,9 @@ i{
 }
 .player_two_btn{
     margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 100px;
     height: 70px;
     font-size: 24px;
@@ -413,8 +441,14 @@ i{
     transform: scale(1.1);
 }
 /* =========player three============ */
+.Player_three_name{
+    color: #c9e513;
+    font-size: 35px;
+    font-weight: 600;
+    text-align: center;
+}
 .player_three{
-    padding: 200px 50px;
+    padding: 50px 110px;
     width: 500px;
     height: 500px;
     display: flex;
@@ -425,7 +459,8 @@ i{
 }
 .player_three input{
     height: 70px;
-    /* width: 300px; */
+    width: 300px;
+    margin-bottom: 50px;
     text-align: center;
     font-size: 24px;
     font-family: "Roboto", sans-serif;
@@ -437,6 +472,7 @@ i{
 }
 .player_three_btn{
     margin: 0 auto;
+    margin-left: 95px;
     width: 100px;
     height: 70px;
     font-size: 24px;
